@@ -1,0 +1,68 @@
+@media screen and (max-width: 1199px) {
+	.btnsets {
+		margin: 24px 0 10px 0;
+	}
+	.btnsets .btn-gray {
+		font-size: 10px;
+		padding: 6px 15px;
+	}
+	.btnsets .btn-blue {
+		font-size: 10px;
+		padding: 6px 15px;
+	}
+	.searchfilter .form-group .control-label{
+		text-align:left;
+	}
+	.searchfilter.row{
+		margin:0;
+	}
+}
+@media screen and (max-width: 990px) {
+	.btnsets{
+		width:auto;
+		margin: 0 0 10px 0;
+		float:right;
+	}
+}
+@media screen and (max-width: 768px) {
+	.btnsets{
+		width:auto;
+		margin:25px 0 10px;
+		float:right;
+	}
+}
+@media screen and (max-width: 767px) {
+	.profile-page .p-t-7{
+		padding-top:0px !important;
+	}
+	.profile-page .p-t-7 span{
+		padding-right:0px !important;
+	}
+	.newformdesign .rightdivresp{
+		padding:0!important;
+	}
+	.newformdesign .row{
+		margin:0;
+	}
+	.resprow{
+		padding:0;
+		margin:0;
+	}
+	.brd-div {
+		border: medium none;
+		height: auto;
+		margin: 0;
+		min-height: auto;
+	}
+	.respset{
+		padding:0;
+	}
+}
+@media screen and (max-width: 320px) {
+	.btn-gray{
+		padding: 8px 30px;
+	}
+	.btn-blue{
+		padding: 8px 40px;
+	}
+}

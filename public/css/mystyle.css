@@ -1,0 +1,529 @@
+/*fonts declaration*/
+@font-face {
+	font-family: 'Myriad Pro Regular';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Condensed';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Condensed'), url('../fonts/MYRIADPRO-COND.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Semibold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Semibold Italic'), url('../fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Semibold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Semibold'), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Condensed Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Condensed Italic'), url('../fonts/MYRIADPRO-CONDIT.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Bold Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold Italic'), url('../fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Bold Condensed Italic';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold Condensed Italic'), url('../fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Bold Condensed';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold Condensed'), url('../fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+}
+@font-face {
+	font-family: 'Myriad Pro Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+/*---------Common Styles Starts Here-----------*/
+/*----------Margins------------*/
+.m-0{margin:0!important;}
+.m-t-0{margin-top:0!important;}
+.m-t-5{margin-top:5px!important;}
+.m-t-10{margin-top:10px!important;}
+.m-t-15{margin-top:15px!important;}
+.m-t-20{margin-top:20px!important;}
+.m-t-25{margin-top:25px!important;}
+.m-t-30{margin-top:30px!important;}
+.m-t-40{margin-top:40px!important;}
+
+.m-b-0{margin-bottom:0!important;}
+.m-b-5{margin-bottom:5px!important;}
+.m-b-10{margin-bottom:10px!important;}
+.m-b-15{margin-bottom:15px!important;}
+.m-b-20{margin-bottom:20px!important;}
+.m-b-25{margin-bottom:25px!important;}
+.m-b-30{margin-bottom:30px!important;}
+.m-b-40{margin-bottom:40px!important;}
+.m-b-50{margin-bottom:50px!important;}
+
+.m-l-0{margin-left:0!important;}
+.m-l-5{margin-left:5px!important;}
+.m-l-10{margin-left:10px!important;}
+.m-l-15{margin-left:15px!important;}
+.m-l-20{margin-left:20px!important;}
+.m-l-25{margin-left:25px!important;}
+
+.m-r-0{margin-right:0!important;}
+.m-r-5{margin-right:5px!important;}
+.m-r-10{margin-right:10px!important;}
+.m-r-15{margin-right:15px!important;}
+.m-r-20{margin-right:20px!important;}
+.m-r-25{margin-right:25px!important;}
+
+/*----------Padding------------*/
+.p-0{padding:0!important;}
+.p-5{padding:5px!important;}
+.p-10{padding:10px!important;}
+.p-20{padding:20px!important;}
+
+.p-l-0{padding-left:0!important;}
+.p-r-0{padding-right:0!important;}
+.p-t-0{padding-top:0!important;}
+.p-b-0{padding-bottom:0!important;}
+
+.p-t-5{padding-top:5px!important;}
+.p-t-10{padding-top:10px!important;}
+.p-t-15{padding-top:15px!important;}
+.p-t-20{padding-top:20px!important;}
+.p-t-25{padding-top:25px!important;}
+
+.p-b-5{padding-bottom:5px!important;}
+.p-b-10{padding-bottom:10px!important;}
+.p-b-15{padding-bottom:15px!important;}
+.p-b-20{padding-bottom:20px!important;}
+.p-b-25{padding-bottom:25px!important;}
+
+.p-l-5{padding-left:5px!important;}
+.p-l-10{padding-left:10px!important;}
+.p-l-15{padding-left:15px!important;}
+.p-l-20{padding-left:20px!important;}
+.p-l-25{padding-left:25px!important;}
+
+.p-r-5{padding-right:5px!important;}
+.p-r-10{padding-right:10px!important;}
+.p-r-15{padding-right:15px!important;}
+.p-r-20{padding-right:20px!important;}
+.p-r-25{padding-right:25px!important;}
+
+.breadcrumb > li + li::before {
+	color: #d0d0d0;
+	content: "> ";
+	font-size: 14px;
+	font-weight: bold;
+	padding:0 15px;
+}
+.breadcrumb li a{
+	color:#b7b7b7;
+	font-size: 14px;
+    font-weight: 500;
+}
+.breadcrumb li.active{
+	color: #158ead;
+    font-size: 14px;
+    font-weight: 500;
+}
+.bg-grey{background:#F5F5F5;}
+.bg-transparent{background:transparent;}
+a:focus{outline:none!important;}
+ul.metismenu li .dashboardicon{
+	background: transparent url(../img/Dashboard_icon.png) no-repeat 0 0;
+	float: left;
+	height: 22px;
+    width: 20px;
+}
+ul.metismenu li:hover .dashboardicon,
+ul.metismenu li.active .dashboardicon{
+	background: transparent url(../img/Dashboard_icon_hover.png) no-repeat 0 0;
+}
+ul.metismenu li .examicon{
+	background: transparent url(../img/Exams_icon.png) no-repeat 0 0;
+	float: left;
+	height: 22px;
+    width: 20px;
+}
+ul.metismenu li:hover .examicon,
+ul.metismenu li.active .examicon{
+	background: transparent url(../img/Exams_icon_hover.png) no-repeat 0 0;
+}
+ul.metismenu li .telecons{
+	background: transparent url(../img/Teleconsultation_icon.png) no-repeat 0 0;
+	float: left;
+	height:22px;
+    width: 20px;
+}
+ul.metismenu li:hover .telecons,
+ul.metismenu li.active .telecons{
+	background: transparent url(../img/Teleconsultation_icon_hover.png) no-repeat 0 0;
+}
+ul.metismenu li .mngnt_icon{
+	background: transparent url(../img/Management_Icon.png) no-repeat 0 0;
+	float: left;
+	height:22px;
+    width: 20px;
+}
+ul.metismenu li:hover .mngnt_icon,
+ul.metismenu li.active .mngnt_icon{
+	background: transparent url(../img/Management_icon_hover.png) no-repeat 0 0;
+}
+ul.metismenu li .reporst_icon{
+	background: transparent url(../img/Report_icon.png) no-repeat 0 0;
+	float: left;
+	height:22px;
+    width: 20px;
+}
+ul.metismenu li:hover .reporst_icon,
+ul.metismenu li.active .reporst_icon{
+	background: transparent url(../img/Report_icon_hover.png) no-repeat 0 0;
+}
+ul.metismenu li:hover a span{
+	color:#098AAA;
+}
+ul.metismenu li a{
+    border-left: 4px solid transparent;
+}
+.nav-tabs > li > a {
+	background: #ececec none repeat scroll 0 0;
+	border-radius: 0;
+	color: #868686;
+	font-weight: 700;
+	line-height: normal;
+	padding: 6px 20px;
+	text-transform:uppercase;
+	border:none;
+}
+.tabs-container .nav-tabs > li a:hover {
+	background:#098AAA;
+	color:#ffffff;
+	border:none;
+}
+.tabs-container .nav-tabs > li.active > a, 
+.tabs-container .nav-tabs > li.active > a:hover, 
+.tabs-container .nav-tabs > li.active > a:focus {
+	background:#098AAA;
+	color:#ffffff;
+	border:none;
+}
+.btn-gray {
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid #d4d4d4;
+	border-radius: 0;
+	color: #d4d4d4;
+	font-size: 15px;
+	padding: 8px 40px;
+	text-transform: uppercase;
+	font-weight:700;
+}
+.btn-gray:hover,
+.btn-gray:focus{
+	background: #f1f1f1 none repeat scroll 0 0;
+	color:#808080;
+}
+.btn-blue {
+	background: #098AAA none repeat scroll 0 0;
+	border: 1px solid #098AAA;
+	border-radius: 0;
+	color: #ffffff;
+	font-size: 15px;
+	padding: 8px 50px;
+	text-transform: uppercase;
+	font-weight:700;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+	background: #006c8c none repeat scroll 0 0;
+	color: #ffffff;
+}
+.form-control {
+	background: #ffffff;
+	border: 1px solid #e7e7e7;
+	color: #b3b3b3;
+	float: left;
+	font-size: 13px;
+	height: auto;
+    line-height: normal;
+    padding: 5px 10px;
+	width: 100%;
+}
+.form-group .control-label {
+    color: #989898;
+    font-size: 13px;
+    font-weight: 600;
+}
+.btnsets .btn-blue{
+	font-size: 14px;
+    padding: 4px 20px;
+}
+.btnsets .btn-gray{
+	font-size: 14px;
+    padding: 4px 20px;
+}
+/*---------Common Styles Starts Here-----------*/
+/*---------Login Styles Starts Here----------------*/
+.body_bg{
+    background: url('../img/bg.jpg') fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+/*.body_bg:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	opacity: .3;
+}
+*/
+.login-form {
+	max-width: 450px;
+	margin: 0 auto;
+	z-index:10;
+}
+form[role=login] {
+	font: 16px/1.6em Lato, serif;
+	color: #919191;
+	/* background: #fff;*/
+	margin-top: 100px;
+	padding: 0 50px 25px 50px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+form[role=login] > section {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 2em;
+}
+form[role=login] h3 {
+	font-size: 30px;
+	text-align: center;
+	color: #c0c0c0;
+	padding: 35px 0 12px 0;
+}
+form[role=login] h3 b {
+	color: #013781;
+}
+
+form[role=login] span.glyphicon {
+	color: #adadad;
+}
+form[role=login] input,
+form[role=login] button {
+	margin: 5px 0;
+}
+form[role=login] input {
+	color: #808080;
+	background: #fff;
+	border: none;
+	padding-left: 40px;
+	border: 1px solid #EDEDED;
+	height:50px;
+	font-family: 'Myriad Pro Regular';
+}
+form[role=login] input::-webkit-input-placeholder {
+	color: #CECECE;
+	font-family: 'Myriad Pro Regular';
+}
+form[role=login] input:-moz-placeholder {
+	color: #CECECE;
+	font-family: 'Myriad Pro Regular';
+}
+form[role=login] input::-moz-placeholder {
+	color: #CECECE;
+	font-family: 'Myriad Pro Regular';
+}
+form[role=login] input:-ms-input-placeholder {  
+	color: #CECECE;
+	font-family: 'Myriad Pro Regular';
+}
+.login_btn {
+	line-height: 30px;
+	font-weight: bold;   
+	background: rgba(15,81,143,1);
+	background: -moz-linear-gradient(left, rgba(15,81,143,1) 0%, rgba(12,114,169,1) 47%, rgba(3,191,233,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(15,81,143,1)), color-stop(47%, rgba(12,114,169,1)), color-stop(100%, rgba(3,191,233,1)));
+	background: -webkit-linear-gradient(left, rgba(15,81,143,1) 0%, rgba(12,114,169,1) 47%, rgba(3,191,233,1) 100%);
+	background: -o-linear-gradient(left, rgba(15,81,143,1) 0%, rgba(12,114,169,1) 47%, rgba(3,191,233,1) 100%);
+	background: -ms-linear-gradient(left, rgba(15,81,143,1) 0%, rgba(12,114,169,1) 47%, rgba(3,191,233,1) 100%);
+	background: linear-gradient(to right, rgba(15,81,143,1) 0%, rgba(12,114,169,1) 47%, rgba(3,191,233,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0f518f', endColorstr='#03bfe9', GradientType=1 );
+	border: none;
+	font-size:18px;
+	border-radius: 0px;
+	font-family: 'Myriad Pro Regular';
+}
+.login-form .form-control {
+    padding-left: 40px;
+}
+.login-form .form-control + .fa {
+	position: absolute;
+	left: 0;
+	top: 22%;
+	padding: 3px 0 0 27px;
+	font-size:25px;
+	color: #CECECE;;
+}
+.forgot a{
+	text-decoration: underline;
+	color:#ffffff;
+	font-weight:bold;
+	font-family: 'Myriad Pro Regular';
+}
+.profile-img-card {
+	width: 100%;
+	height: 100%;
+	/* margin: 0 auto 10px;*/
+	display: block;  
+}
+/*---------Login Styles Ends Here----------------*/
+/*---------Registration Styles Starts Here-----------*/
+.tab_innerheading {
+	border-bottom: 1px solid #cccccc;
+	float: left;
+	margin: 0 0 20px;
+	padding: 0 0 10px;
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 14px;
+}
+.newformdesign .form-group label {
+	color: #989898;
+	float: left;
+	font-size: 13px;
+	font-weight: 600;
+	width: 100%;
+}
+.newformdesign .form-group{
+	width:100%;
+	float: left;
+}
+.newformdesign .input-group{
+	float: left;
+	width: 100%;
+}
+.newformdesign .input-group .form-control {
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid #e7e7e7;
+	color: #b3b3b3;
+	float: left;
+	font-size: 13px;
+	height: auto;
+    line-height: normal;
+    padding: 5px 10px;
+	width: 100%;
+}
+.newformdesign .input-group .form-control:focus{
+	border-color:#098AAA;
+}
+.newformdesign .input-group .chosen-select{
+	background: transparent none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+	float: left;
+	width: 100%;
+}
+.newformdesign .input-group .chosen-container{
+	width: 100%!important;
+}
+.newformdesign .input-group .chosen-container .chosen-single{
+	background: transparent none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+	box-shadow: none;
+	border-radius: 0;
+	color: #b3b3b3;
+	font-size: 13px;
+}
+.newformdesign .input-group .chosen-container .chosen-single:focus{
+	border-color:#098AAA;
+}
+.newformdesign .input-group .chosen-container .chosen-single span{
+	color: #b3b3b3;
+	font-size: 13px;
+}
+
+
+
+
+
+.selectdropdown .chosen-select{
+	background: transparent none repeat scroll 0 0;
+    border: 1px solid #e7e7e7;
+	float: left;
+	width: 100%;
+}
+.selectdropdown .chosen-container{
+	width: 100%!important;
+}
+.selectdropdown .chosen-container .chosen-single{
+	background:#ffffff;
+    border: 1px solid #e7e7e7;
+	box-shadow: none;
+	border-radius: 0;
+	color: #b3b3b3;
+	font-size: 13px;
+}
+.selectdropdown .chosen-container-active.chosen-with-drop .chosen-single {
+	background-image: none;
+	border: 1px solid #e7e7e7;
+	border-radius: 0;
+	box-shadow: none;
+}
+.selectdropdown .chosen-container .chosen-single:focus{
+	border-color:#098AAA;
+}
+.newformdesign .chosen-container .chosen-single span{
+	color: #b3b3b3;
+	font-size: 13px;
+}
+.searchfilter .form-group{
+	width:100%;
+	float:left;
+}
+/*---------Registration Styles Ends Here-----------*/
+
+
+
+.profile-page label{text-align:left !important;}
+.p-t-7{padding-top:7px !important;}
+.p-10{padding:10px !important;}
+.profile_heading{color:#098AAA;}
+.changepasswordform label{color:#909090;}
+.changepasswordform .form-control{
+	background: transparent none repeat scroll 0 0;
+	border: 1px solid #e7e7e7;
+	color: #b3b3b3;
+	float: left;
+	font-size: 13px;
+	height: auto;
+	line-height: normal;
+	padding: 5px 10px;
+	width: 100%;
+}
+.litegray_text{color:gray;font-size:11px;}
+.upload_btn{background: #006C8C;color:#fff;padding:5px;cursor:pointer;}
+
+
+.editicon, .editicon:hover{
+background: #006C8C url(../img/edit_icon.png) no-repeat 20px 5px;
+background-size: 25px 25px;
+}
